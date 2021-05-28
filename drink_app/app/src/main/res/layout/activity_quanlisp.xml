@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.Quanlisp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarquanlisp"
+        app:title="Sản phẩm"
+        app:titleTextColor="@color/white"
+        android:background="#C8E91E76"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewsp"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonadd"
+            android:textColor="@color/black"
+            android:background="#8BC34A"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="THÊM"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:layout_marginLeft="90dp"
+            android:id="@+id/buttonquatrang"
+            android:textColor="@color/black"
+            android:background="#8BC34A"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

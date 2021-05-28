@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/nenthemloaisp"
+    tools:context=".activity.UpdateLoaiSpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Chỉnh sửa thông tin loại sản phẩm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/edittextupdatetenloaisp"
+                android:inputType="text"
+                android:hint="Tên loại sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/edittextupdateanhloaisp"
+                android:inputType="text"
+                android:hint="Hình ảnh loại sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginLeft="30dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:text="Update"
+                android:id="@+id/buttonxacnhanupdateloai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:layout_marginLeft="90dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:text="Hủy"
+                android:id="@+id/buttontroveupdateloai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
